@@ -1,0 +1,20 @@
+baikal_wellknown_davrerouting_home:
+    pattern: /
+    defaults: { _controller: BaikalWellknownBundle:DavRerouting:propfind }
+    methods: ['PROPFIND', 'OPTIONS', 'REPORT']
+
+baikal_wellknown_davrerouting_login:
+    pattern: /login{trailingSlash}
+    defaults: { _controller: BaikalWellknownBundle:DavRerouting:propfind }
+    methods: ['PROPFIND', 'OPTIONS', 'REPORT']
+    requirements: { trailingSlash : "[/]{0,1}" }
+
+baikal_wellknown_davrerouting_principals:
+    pattern: /principals{trailingSlash}
+    defaults: { _controller: BaikalWellknownBundle:DavRerouting:propfind }
+    methods: ['PROPFIND', 'OPTIONS', 'REPORT']
+    requirements: { trailingSlash : "[/]{0,1}" }
+
+baikal_wellknown_wellknown:
+    pattern:  /.well-known/{service}
+    defaults: { _controller: BaikalWellknownBundle:WellKnown:index }

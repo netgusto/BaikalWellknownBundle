@@ -1,0 +1,12 @@
+{
+    "name": "baikal/wellknown-bundle",
+    "description": "Baïkal Well-known Bundle",
+    "license": "GNU-GPL",
+    "authors": [
+        {
+            "name": "Jérôme Schneider - Net Gusto",
+            "email": "contact@netgusto.com"
+        }
+    ],
+    "require": {}
+}
