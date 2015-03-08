@@ -1,6 +1,11 @@
 {
     "name": "baikal/wellknown-bundle",
     "description": "Baïkal Well-known Bundle",
+    "type": "symfony-bundle",
+    "autoload": {
+        "psr-0": { "Baikal\\WellknownBundle": "" }
+    },
+    "target-dir": "Baikal/WellknownBundle",
     "license": "GNU-GPL",
     "authors": [
         {
